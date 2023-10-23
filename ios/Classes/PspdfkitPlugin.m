@@ -143,10 +143,10 @@ PSPDFSettingKey const PSPDFSettingKeyHybridEnvironment = @"com.pspdfkit.hybrid-e
             }
         }
         
-      //  PSPDFNavigationController *navigationController = [[PSPDFNavigationController alloc] initWithRootViewController:self.pdfViewController];
-      // navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
-      //  UIViewController *presentingViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-      //  [presentingViewController presentViewController:navigationController animated:YES completion:nil];
+        PSPDFNavigationController *navigationController = [[PSPDFNavigationController alloc] initWithRootViewController:self.pdfViewController];
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+        UIViewController *presentingViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+        [presentingViewController presentViewController:navigationController animated:YES completion:nil];
         result(@(YES));
  }
 
